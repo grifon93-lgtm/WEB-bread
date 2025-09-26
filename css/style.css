@@ -1,0 +1,458 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*======common======*/
+
+body {
+	font-family: "メイリオ","ヒラギノ角ゴシック","Arial",sans-serif;
+	width: 1200px;
+//	width: 100%;
+	margin: 0 auto;
+}
+img {
+	width: 100%;
+}
+
+header {
+	width: 100%;
+	background: #fff;
+//	background: #ff0;
+	text-align: center;
+}
+header div {
+	margin-bottom: 24px;
+}
+header div h1 {
+	font-family: "Comic sans MS";
+//	font-size: 3rem;
+	font-size: 300%;
+}
+.hambotan {
+	display: none;
+}
+
+nav ul {
+	width: 100%;
+	display: flex;
+//	flex-wrap: wrap;
+	justify-content: space-between;
+	line-height: 2;
+//	border: solid 1px #630;
+}
+nav ul li {
+//	width: 200px;
+	width: 16.6%;
+	border: solid 1px #630;
+	text-align: center;
+	font-family: "Comic sans MS";
+}
+/*nav ul li:first-child {
+	border-left: none;
+}*/
+nav ul li a {
+	display: block;
+}
+nav ul li:hover {
+	background: #630;
+}
+nav ul li a:hover {
+	color: #fff;
+	font-weight: bold;
+}
+
+/*pagetop*/
+.pagetop {
+	aspect-ratio: 1 / 1;
+	max-width: 10%;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+}
+
+/*footer*/
+footer {
+	width: 100%;
+	padding: 24px 16px 48px;
+	display: flex;
+	flex-wrap: wrap;
+//	justify-content: center;
+	background: #630;
+	color: #fff;
+}
+footer h2 {
+	margin-bottom: 8px;
+//	padding-bottom: 8px;
+//	font-size: 1.5rem;
+	font-size: 200%;
+}
+footer a {
+	color: #fff;
+}
+footer a:hover {
+	color: #afeeee;
+}
+.shopgaiyou {
+	width: 50%;
+}
+.shop-info {
+	padding: 0 24px 0 0;
+	display: flex;
+	flex-wrap: wrap;
+//	justify-content: flex-start;
+	justify-content: space-between;
+}
+.shop-info div {
+	margin-right: 48px;
+}
+.shop-info p {
+	line-height: 1.5;
+	margin-bottom: 8px;
+}
+.shop-info .map {
+	width: 45%;
+}
+.link-box {
+//	margin: 0 48px;
+	padding-left: 24px;
+}
+.link-box ul {
+	margin: 0 auto 0 0;
+	line-height: 2;
+}
+
+/*main_visual*/
+.main_visual {
+	width: 100%;
+	margin: 0 auto 48px;
+	text-align: center;
+}
+.main_visual img {
+	margin-bottom: 24px;
+}
+.main_visual h2 {
+//	font-size: 2rem;
+	font-size: 240%;
+}
+.main_visual p {
+//	font-size: 1.2rem;
+	font-size: 140%;
+}
+
+/*pankuzu*/
+.pankuzu {
+	padding: 16px 0;
+}
+.pankuzu ol {
+	padding-left: 48px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.pankuzu ol li::after {
+	content: ">";
+	margin: 0 16px;
+}
+.pankuzu ol li:last-child::after {
+	content: none;
+}
+.pankuzu ol li a:hover {
+	color: #6495ed;
+}
+
+/*page_title*/
+.page_title {
+	width: 100%;
+	margin-bottom: 24px;
+	height: 210px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	background-image: url(../images/index_imag_02.png);
+	background-repeat: none;
+}
+.page_title h1 {
+	margin: 0 auto;
+//	font-size: 2.5rem;
+	font-size: 300%;
+	color: #fff;
+	text-align: center;
+	text-shadow: 0 0 10px #000 ;
+}
+
+/*content_box*/
+.content_box {
+//	width: 1000px;
+	width: 84%;
+	margin: 0 auto 72px;
+}
+.content_box main,
+.content_box div {
+	margin-bottom: 48px;
+}
+.content_box h2 {
+//	font-size: 2rem;
+	font-size: 240%;
+	margin-bottom: 8px;
+}
+
+/*linkbotan*/
+.link_botan {
+	margin: 24px 0 0;
+	max-width: 200px;
+	padding: 4px;
+	border: solid 1px #daa520;
+	text-align: center;
+}
+.link_botan a {
+	display: block;
+	color: #daa520;
+}
+.link_botan:hover {
+	background: #daa520;
+}
+.link_botan a:hover {
+	color: #fff;
+	font-weight: bold;
+}
+
+/*common_responsible*/
+@media screen and (max-width: 1040px) {
+	body {
+		width: 100%;
+	}
+
+}
+
+@media screen and (max-width: 780px) {
+	body {
+		width: 100%;
+	}
+/*	.hambotan {
+		margin-bottom: 0;
+		display: block;
+		background: #daa520;
+		color: #fff;
+		position: relative;
+	}*/
+	nav {
+		width: 100%;
+//		height: 205px;
+//		position: absolute;
+//		top: 100;
+//		left: 0;
+	}
+	nav ul {
+		display: block;
+	}
+	nav ul li {
+		width: 100%;
+	//	background: #630;
+	//	border: solid 1px #fff;
+	}
+	/*nav ul li a {
+		color: #fff;
+	}*/
+	.pagetop {
+		max-width: 20%;
+	}
+	footer {
+		display: block;
+	}
+	footer .shopgaiyou {
+		width: 100%;
+	}
+	footer .shop-info {
+		display: block;
+	}
+}
+
+/*=======index===============*/
+main {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+/*main img {
+//	width: 350px;
+	width: 35%;
+}*/
+main .picture {
+	width: 35%;
+}
+main .picture img {
+	width: 100%;
+}
+main div {
+//	width: 600px; 
+	width: 60%;
+}
+
+/*menu_top*/
+.menu_top h2 {
+	text-align: center;
+}
+.menu_gallery {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+.menu_gallery section {
+	width: 20%;
+}
+.menu_gallery section p {
+	text-align: center;
+}
+.menu_top .link_botan {
+	margin: 0 auto;
+}
+
+/*news_top*/
+.news_top h2 {
+	text-align: center;
+}
+.news_top table {
+	margin: 0 auto 32px;
+//	width: 900px;
+	width: 75%;
+}
+.news_top table th {
+	padding: 8px;
+	text-decoration: none;
+	border-bottom: dotted 1px #ccc;
+	text-align: left;
+}
+.news_top table td {
+	text-decoration: none;
+	border-bottom: dotted 1px #ccc;
+}
+.news_top table td a:hover {
+	color: #6495ed;
+}
+.news_top .link_botan {
+	margin: 0 auto;
+}
+
+/*index_responsible*/
+@media screen and (max-width: 1040px) {
+	.main_visual div h2 {
+		font-size: 200%;
+	}
+}
+@media screen and (max-width: 780px) {	
+	.main_visual div h2 {
+		font-size: 160%;
+		}
+	.main_visual div p {
+		font-size: 100%;
+	}
+	main {
+		display: block;
+	}
+	main .picture,
+	main div {
+		width: 98%;
+		margin: 0 auto;
+	}
+	main div h2 {
+		text-align: center;
+	}
+	main .link_botan {
+		margin: 24px auto 0;
+	}
+	.menu_gallery {
+		display: block;
+	}
+	.menu_gallery section {
+		margin: 0 auto 32px;
+		width: 80%;
+	}
+}
+
+/*======about.html======*/
+.about_miemie,
+.concept_miemie,
+.message_miemie {
+	margin-bottom: 48px;
+	display: flex;
+	flex: wrap;
+	justify-content: space-between;
+}
+.about_miemie img,
+.concept_miemie img,
+.message_miemie img {
+//	width: 350px;
+	width: 100%;
+}
+.about_miemie div,
+.concept_miemie div,
+.message_miemie div {
+//	width: 600px;
+	width: 60%;
+}
+.about_miemie h2,
+.concept_miemie h2,
+.message_miemie h2 {
+	font-size: 220%;
+}
+.about_miemie .picture,
+.concept_miemie .picture,
+.message_miemie .picture {
+	width: 35%;
+}
+
+/*about_responsible*/
+@media screen and (max-width: 768px) {
+	.about_miemie,
+	.concept_miemie,
+	.message_miemie {
+		display: block;
+	}
+	.about_miemie div,
+	.concept_miemie div,
+	.message_miemie div {
+		margin: 0 auto 32px;
+		width: 90%;
+	}
+	
+	.about_miemie .picture,
+	.concept_miemie .picture,
+	.message_miemie .picture {
+		margin: 0 auto 32px;
+		width: 90%;
+	}
+	.about_miemie h2,
+	.concept_miemie h2,
+	.message_miemie h2 {
+		font-size: 200%;
+	}
+}
+
+/*======menu.html======*/
+.kakaku {
+	margin: 0 auto 48px;
+	text-align: center;
+}
+.gentei_menu h2,
+.regular_menu h2 {
+	text-align: center;
+}
+.gentei_menu section,
+.regular_menu section {
+	margin-bottom: 72px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.gentei_menu section p,
+.regular_menu section p {
+	text-align: center;
+}
+.gentei_menu section {
+	border-bottom: solid 1px #630;
+}
+.regular_menu section {
+	margin-bottom: 32px;
+}
+
+/*menu_responsible*/
